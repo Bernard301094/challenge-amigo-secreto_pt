@@ -2,15 +2,28 @@
 let nomeAmigos = [];
 let amigos = document.querySelector('#amigo');
 let listaAmigos = document.querySelector('#listaAmigos');
+let resultado = document.querySelector('#resultado');
 
 const adicionarAmigo = () => {
-    nomeAmigos.push(amigos.value);
-    listaAmigos.innerHTML += `<li>${amigos.value}</li>`;
+    if(amigos.value === ''){
+        alert("Por favor, insira um nome.");
+    } else {
+        nomeAmigos.push(amigos.value);
+        listaAmigos.innerHTML += `<li>${amigos.value}</li>`;
+    }
 
-    limparBarraAmigos();
+    limparNomeAmigo();
 }
 
-
-const limparBarraAmigos = () => {
+const limparNomeAmigo = () => {
     amigos.value = '';
+}
+
+function sortearAmigo() {
+    let sorteado = nomeAmigos[Math.floor(Math.random() * nomeAmigos.length)];
+    resultado.innerHTML = `<li>${sorteado}</li>`;
+
+    if(nomeAmigos.length === 0){
+        resultado.innerHTML = '';
+    }
 }
