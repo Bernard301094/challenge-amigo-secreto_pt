@@ -17,7 +17,7 @@ Este projeto é um desafio de lógica de programação que simula um sorteio de 
     ```
 2. Navegue até o diretório do projeto:
     ```bash
-    cd challenge-amigo-secreto
+    cd challenge-amigo-secreto_pt
     ```
 3. Abra o arquivo `index.html` no seu navegador para iniciar a aplicação.
 
