@@ -13,7 +13,7 @@ Este projeto é um desafio de lógica de programação que simula um sorteio de 
 ## Instalação
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/seu-usuario/challenge-amigo-secreto.git
+    git clone https://github.com/Bernard301094/challenge-amigo-secreto_pt.git
     ```
 2. Navegue até o diretório do projeto:
     ```bash
