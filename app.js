@@ -60,12 +60,37 @@ function removerAmigo(index) {
 
 // Função principal que realiza o sorteio
 function sortearAmigo() {
-    // Verifica se há nomes na lista
     if (nomeAmigos.length === 0 || nomeAmigos.length === 1) {
         resultado.innerHTML = '';
-        return; // Sai da função se a lista estiver vazia
+        return;
     }
-    // Lógica de sorteio aleatório
     let sorteado = nomeAmigos[Math.floor(Math.random() * nomeAmigos.length)];
-    resultado.innerHTML = `<li>${sorteado}</li>`; // Exibe o resultado
+    resultado.innerHTML = `<li>${sorteado}</li>`;
+    
+    // Mostrar botão de reinício
+    document.querySelector('#botaoReiniciar').classList.remove('hidden');
+    document.querySelector('.button-container').style.display = 'flex';
+}
+
+// Função para reiniciar o sistema
+function reiniciarSistema() {
+    if (confirm("Deseja reiniciar?")) {
+        // Reinicia o array de nomes
+        nomeAmigos = [];
+        
+        // Limpa a lista visual
+        atualizarListaAmigos();
+        
+        // Limpa o resultado do sorteio
+        resultado.innerHTML = '';
+        
+        // Limpa o input
+        limparNomeAmigo();
+        
+        // Opcional: enfocar o input automaticamente
+        amigos.focus();
+    }
+
+    // Ocultar botão de reinício
+    document.querySelector('#botaoReiniciar').classList.add('hidden');
 }

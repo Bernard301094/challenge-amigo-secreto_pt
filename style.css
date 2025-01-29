@@ -143,7 +143,7 @@ ul {
 }
 
 /* Botão de sortear título */
-.button-draw {
+.button-draw{
     display: flex;
     align-items: center;
     width: 100%;
@@ -163,4 +163,40 @@ ul {
 
 #listaAmigos {
     color: var(--color-primary);
+}
+
+/* .button-reset {
+    background-color: #666666;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+} */
+
+/* Botão de sortear título */
+.button-reset {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: #4d4d4d;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.button-reset:hover {
+    background-color: var(--color-button);
+}
+
+.hidden {
+    display: none !important;
 }
