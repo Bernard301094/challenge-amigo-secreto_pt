@@ -87,7 +87,7 @@ function reiniciarSistema() {
         // Limpa o input
         limparNomeAmigo();
         
-        // Opcional: enfocar o input automaticamente
+        // Enfocar o input automaticamente
         amigos.focus();
     }
 
