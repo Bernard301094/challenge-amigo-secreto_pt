@@ -184,3 +184,15 @@ ul {
 .hidden {
     display: none !important;
 }
+
+/* Media queries */
+@media (max-width: 768px) {
+    .header-banner {
+        flex-direction: column-reverse;
+    }
+
+    .main-title {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
