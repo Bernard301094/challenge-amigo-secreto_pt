@@ -28,3 +28,5 @@ Este projeto é um desafio de lógica de programação que simula um sorteio de 
 4. Clique no botão "Sortear" para realizar o sorteio do amigo secreto.
 5. Para reiniciar o sistema, clique no botão "Reiniciar".
 
+## Deploy
+Você pode acessar a aplicação online através do seguinte link: [Challenge Amigo Secreto](https://challenge-amigo-secreto-sage.vercel.app)
