@@ -187,6 +187,9 @@ ul {
 
 /* Media queries */
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
     .header-banner {
         flex-direction: column-reverse;
     }
