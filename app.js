@@ -65,7 +65,7 @@ function sortearAmigo() {
         return;
     }
     let sorteado = nomeAmigos[Math.floor(Math.random() * nomeAmigos.length)];
-    resultado.innerHTML = `<li>${sorteado}</li>`;
+    resultado.innerHTML = `<p style="color: black;">Amigo Sorteado:</p><li>${sorteado}</li>`;
     
     // Mostrar botão de reinício
     document.querySelector('#botaoReiniciar').classList.remove('hidden');
